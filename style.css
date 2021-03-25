@@ -6,7 +6,7 @@
 }
 .bg_black{
     background-color: black;
-    color: #b3b3b3;
+    color: #717171;
 }
 .bg_grey{
     background-color: #282828;
@@ -64,7 +64,7 @@ aside .box{
 .home_panel img{
     height: 24px;
     vertical-align: middle;
-    margin-right: 16px;
+    margin-right: 10px;
 }
 ul{
     list-style: none;
@@ -89,7 +89,7 @@ h6{
     background-color: #b3b3b3;
     width: 35px;
     height: 35px;
-    margin-right: 16px;
+    margin-right: 10px;
 }
 .plus i{
     position: absolute;
@@ -100,15 +100,29 @@ h6{
     font-size: 20px;
 }
 
-.profilo_end{
-}
 .profile_box{
     display: flex;
     align-items: center;
 }
-.profilo_end img{
-    width: 35px;
-    height: 35px;
-    margin-right: 16px;
-    background-color: #b3b3b3;
+.imgbox{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    margin:0 10px 10px 0;
+    background-color: #717171;
+    border-radius: 50%;
+    display: inline-block;
+}
+.imgbox img{
+    max-width:100%;
+    max-height:100%;
+    border-radius: 50%;
+}
+aside hr{
+    border-color: #717171;
+    margin: 15px 0;
+}
+.installapp_box i{
+    margin-right: 10px;
 }
