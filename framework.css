@@ -17,6 +17,9 @@
 .relative{
     position: relative;
 }
+.transparent{
+    color: transparent;
+}
 
 
  .clearfix{

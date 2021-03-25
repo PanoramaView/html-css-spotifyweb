@@ -1,9 +1,12 @@
 *{
     font-family: 'Montserrat', sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .bg_black{
     background-color: black;
-    color: white;
+    color: #b3b3b3;
 }
 .bg_grey{
     background-color: #282828;
@@ -12,11 +15,8 @@
 .bg_darkgrey{
     background-color: #080B12;
 }
-.opacity{
-    opacity: 0.5;
-}
-.opacity2{
-    opacity: 0.85;
+.hoveractive{
+    color: white;
 }
 .main-spotify{
 background-color: #080B12;
@@ -71,5 +71,26 @@ ul{
     padding: 0;
 }
 aside li{
-    padding: 8px 0;
+    margin: 8px 0;
+}
+.crea_playlist{
+    display: flex;
+    align-items: center;
+
+}
+.ul_playlist{
+    margin-top:24px;
+}
+.playlist-icon{
+    background-color: #b3b3b3;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+.plus i{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: black;
 }
