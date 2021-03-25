@@ -1,0 +1,75 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.bg_black{
+    background-color: black;
+    color: white;
+}
+.bg_grey{
+    background-color: #282828;
+    color: white;
+}
+.bg_darkgrey{
+    background-color: #080B12;
+}
+.opacity{
+    opacity: 0.5;
+}
+.opacity2{
+    opacity: 0.85;
+}
+.main-spotify{
+background-color: #080B12;
+}
+.flex_grow{
+    flex-grow: 1;
+}
+
+body{
+    display: flex;
+    flex-direction: column-reverse;
+    line-height: 1.6;
+}
+nav{
+    height: 100px;
+}
+main{
+    height: calc(100vh - 100px);
+}
+aside{
+    float: left;
+    height: inherit;
+    width: 232px;
+    padding: ;
+}
+.logobox{
+    position: relative;
+    height: 70px;
+    margin-bottom: 18px;
+    padding: 24px 24px 0 24px;
+}
+.logo{
+    width: 100%;
+    max-width: 131px;
+    height: 40px;
+}
+aside .box{
+    padding: 0 24px;
+}
+
+.home_panel img{
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+.home_panel{
+    font-size: 14px;
+    line-height: 16px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+aside li{
+    padding: 8px 0;
+}

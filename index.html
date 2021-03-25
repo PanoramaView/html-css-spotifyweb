@@ -1,68 +1,87 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- font -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-        <!-- FRAMEWORK -->
-        <link rel="stylesheet" href="framework.css">
-        <!-- https://fontawesome.com/v4.7.0/icons/ -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- MyCSS -->
-        <link rel="stylesheet" href="style.css">
 
-        <title></title>
-        
-    </head>
-    <body>
-        <nav class="bg_grey flex_end">
-            <div class="brano">
-                <img src="" class="img-responsive">
-                <div class="titolo_brano"></div>
-                <span class="icona"></span>
-                <span class="icona"></span>
-            </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- FRAMEWORK -->
+    <link rel="stylesheet" href="framework.css">
+    <!-- https://fontawesome.com/v4.7.0/icons/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MyCSS -->
+    <link rel="stylesheet" href="style.css">
 
-            <div class="playbar flex_grow">
-                <div class="box">
-                    <div class="play"></div>
-                    <div class="prodbar inline-block">
-                        <div class="time"></div>
-                        <div class="bar"></div>
-                        <div class="time"></div>
-                    </div>
+    <title></title>
+
+</head>
+
+<body>
+    <nav class="bg_grey border">
+        <div class="brano">
+            <img src="" class="img-responsive">
+            <div class="titolo_brano"></div>
+            <span class="icona"></span>
+            <span class="icona"></span>
+        </div>
+
+        <div class="playbar flex_grow">
+            <div class="box">
+                <div class="play"></div>
+                <div class="prodbar inline-block">
+                    <div class="time"></div>
+                    <div class="bar"></div>
+                    <div class="time"></div>
                 </div>
             </div>
-            <div class="options">
-                <span class="icon"></span>
-                <span class="icon"></span>
-                <div class="volumebar"></div>
-            </div>
-        </nav>
+        </div>
+        <div class="options">
+            <span class="icon"></span>
+            <span class="icon"></span>
+            <div class="volumebar"></div>
+        </div>
+    </nav>
 
-        <main>
-            <aside class="flex_c bg_black">
-                <div class="logo"></div>
-                <ul></ul>
+    <main>
+        
+        <aside class="flex_c bg_black">
+            <div class="logobox borderw">
+                <img src="img/logo.svg" class="img-responsive logo">
+            </div>
+            <div class="box">
+                <ul class="home_panel borderw">
+                    <li class="hover borderw opacity2">
+                        <img src="img/home.svg"><span>Home</span> 
+                    </li>
+                    <li class="hover opacity">
+                        <img src="img/search.svg"><span>Cerca</span>
+                    </li>
+                    <li class="hover">
+                        <img src="img/libreria.svg"><span>La Tua libreria</span>
+                    </li>
+                </ul>
                 <ul class="playlist flex_grow"></ul>
                 <div class="links"></div>
-            </aside>
-            <section>
-                <div class="nav"></div>
-                <div class="main_music of_scroll">
-                    <div class="navbar"></div>
-                    <div class="section"></div>
-                    <div class="section"></div>
-                    <div class="section"></div>
-                </div>
-            </section>
-        </main>
 
-        <footer>
-            Marco Zhou, 
-        </footer>
-    </body>
+            </div>
+        </aside>
+
+
+        <section class="border">
+            <div class="navv"></div>
+            <div class="main_spotify of_scroll">
+                <div class="navbarr"></div>
+                <div class="section"></div>
+                <div class="section"></div>
+                <div class="section"></div>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>
