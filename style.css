@@ -31,7 +31,7 @@ body{
     line-height: 1.6;
 }
 nav{
-    height: 100px;
+    height: 90px;
 }
 main{
     height: calc(100vh - 100px);
@@ -40,7 +40,6 @@ aside{
     float: left;
     height: inherit;
     width: 232px;
-    padding: ;
 }
 .logobox{
     position: relative;
@@ -55,6 +54,11 @@ aside{
 }
 aside .box{
     padding: 0 24px;
+    height: calc(100% - 86px);
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
 .home_panel img{
@@ -62,16 +66,16 @@ aside .box{
     vertical-align: middle;
     margin-right: 16px;
 }
-.home_panel{
-    font-size: 14px;
-    line-height: 16px;
-}
 ul{
     list-style: none;
     padding: 0;
 }
 aside li{
     margin: 8px 0;
+}
+h6{
+    color: white;
+    text-transform: uppercase;
 }
 .crea_playlist{
     display: flex;
@@ -83,8 +87,8 @@ aside li{
 }
 .playlist-icon{
     background-color: #b3b3b3;
-    width: 24px;
-    height: 24px;
+    width: 35px;
+    height: 35px;
     margin-right: 16px;
 }
 .plus i{
@@ -93,4 +97,18 @@ aside li{
     left:50%;
     transform: translate(-50%,-50%);
     color: black;
+    font-size: 20px;
+}
+
+.profilo_end{
+}
+.profile_box{
+    display: flex;
+    align-items: center;
+}
+.profilo_end img{
+    width: 35px;
+    height: 35px;
+    margin-right: 16px;
+    background-color: #b3b3b3;
 }
