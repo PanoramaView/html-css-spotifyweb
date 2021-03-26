@@ -163,14 +163,17 @@ nav{
     margin: 0 14px;
     align-self: center;
     max-width: 80px;
-
+}
+.artistabrano{
+    color: #717171;
 }
 .box_playing .boxbtn{
     align-self: center;
     margin: 0 5px;
-    width: 12px;
-    height: 12px;
-    font-size: 12px;
+    width: 14px;
+    height: 14px;
+    font-size: 13px;
+    color: #717171;
 }
 .boxbtn{
     align-self: center;
@@ -209,16 +212,18 @@ nav{
     width: 100%;
     /* align-content:baseline; ???*/
 }
-.bgbar{
+.section_bgbar{
     flex-grow: 1;
     width: 100%;
     position: relative;
     height:10px;
     align-content:baseline;
+    margin: 0 10px;
+    background-color: transparent;
 }
 .time{
 }
-.playedbar{
+.bgbar{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -228,4 +233,29 @@ nav{
     background-color: #535353;
     color: #b3b3b3;
     border-radius: 5px;
+}
+.playedbar{
+    background-color: #b3b3b3;
+    border-radius: 5px;
+    width: 20%;
+}
+.time{
+    font-size: 11px;
+}
+
+.left_options{
+    display: flex;
+    width: 25%;
+    justify-content: flex-end;
+}
+.left_options .boxbtn{
+    align-self: center;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+}
+.left_options .section_bgbar{
+    width: 100%;
+    max-width: 70px;
 }
