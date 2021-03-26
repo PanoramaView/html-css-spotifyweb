@@ -23,7 +23,7 @@
 
 <body>
     <nav class="bg_grey">
-        <div class="box_copertina ">
+        <div class="box_playing ">
             <div class="box_img">
                 <img src="img/sinister.jpeg" class="img-responsive">
             </div>
@@ -35,17 +35,44 @@
                     Christopher Young
                 </div>
             </div>
-            <span class="icona"></span>
-            <span class="icona"></span>
+            <div class="boxbtn">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </div>
+            
+            <div class="boxbtn">
+                <i class="fa fa-folder-o" aria-hidden="true"></i>
+            </div>
         </div>
 
-        <div class="playbar flex_grow">
+        <div class="playbar">
             <div class="box">
-                <div class="play"></div>
-                <div class="prodbar inline-block">
-                    <div class="time"></div>
-                    <div class="bar"></div>
-                    <div class="time"></div>
+                <div class="playoptions">
+                    <button class="my_btn boxbtn">
+                        <i class="fa fa-random" aria-hidden="true"></i>
+                    </button>
+                    <button class="my_btn boxbtn">
+                        <i class="fa fa-step-backward" aria-hidden="true"></i>
+                    </button>
+                    <button class="my_btn boxbtn display-none">
+                        <i class="fa fa-pause-circle-o" aria-hidden="true"></i>
+                    </button>
+                    <button class="my_btn boxbtn mainbtn">
+                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                    </button>
+                    <button class="my_btn boxbtn">
+                        <i class="fa fa-step-forward" aria-hidden="true"></i>
+                    </button>
+                    <button class="my_btn boxbtn">
+                        <i class="fa fa-repeat" aria-hidden="true"></i>
+                    </button>
+
+                </div>
+                <div class="progbar">
+                    <div class="time">0:25</div>
+                    <div class="bgbar">
+                        <div class="playedbar"></div>
+                    </div>
+                    <div class="time">4:35</div>
                 </div>
             </div>
         </div>

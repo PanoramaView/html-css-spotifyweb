@@ -30,6 +30,14 @@
     white-space: nowrap;
     overflow: hidden;
 }
+.display-none{
+    display: none;
+}
+.my_btn{
+    padding: 0;
+    border: none;
+    background: none;
+}
 
 
  .clearfix{
