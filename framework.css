@@ -4,6 +4,7 @@
 .hover:hover{
     cursor: pointer;
     color: white;
+    opacity: 1;
 }
 .border-rounded{
     border-radius: 5px;
@@ -22,6 +23,12 @@
 }
 .color-black{
     color: black;
+}
+.text_ellipsis,
+.text_ellipsis *{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 
