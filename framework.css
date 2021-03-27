@@ -6,6 +6,10 @@
     color: white;
     opacity: 1;
 }
+.hoveropacity:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
 .border-rounded{
     border-radius: 5px;
 }
@@ -45,10 +49,10 @@
     display: table;
     clear: both;
 }
-/* [class*="col-"]{
+[class*="col-"]{
     float:left;
     overflow: hidden;
-} */
+}
 
 .col-1{
     width: calc(100%/12);
