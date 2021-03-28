@@ -287,6 +287,7 @@ section{
     align-items: center;
     width: 100%;
     height: 80px;
+    padding-right: 30px;
 }
 .container{
     width: 100%;
@@ -294,6 +295,7 @@ section{
 .main-spotify{
     height: calc(100% - 80px);
     color: #b3b3b3;
+    overflow: auto;
 }
 .navbarr .box{
     padding: 15px 25px;
@@ -323,11 +325,15 @@ section{
 }
 .brano{
     width: 155px;
-    height: 220px;
+    height: 200px;
     flex-shrink: 0;
-    margin: 0 6.5px;
+    padding: 0 6.5px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
+}
+.boxbrano{
+    position: relative;
 }
 .box3{
     flex-grow: 1;
@@ -341,4 +347,31 @@ section{
 }
 .subtitle{
     color: #717171;
+}
+
+/* BRANO HOVER */
+.hover_overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.562);
+    display: none;
+}
+.hover_overlay i{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 60px;
+    color: white;
+    padding: 2px;
+    z-index: 1;
+}
+.brano:hover .box3{
+    opacity: 0.7;
+}
+.brano:hover .hover_overlay{
+    display: block;
 }
