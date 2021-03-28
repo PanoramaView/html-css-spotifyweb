@@ -285,6 +285,7 @@ section{
     position: fixed;
     width: calc(100% - 200px);
     opacity: 0.7;
+    z-index: 2;
 }
 .navv .box{
     display: flex;
@@ -312,9 +313,6 @@ section{
     flex-wrap: wrap;
 }
 
-.section_brano{
-
-}
 .h_brano{
     color: white;
     padding: 20px 0;
