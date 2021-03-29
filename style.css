@@ -23,11 +23,7 @@
     background: linear-gradient(0deg, rgba(17,22,29,1) 22%, rgb(30, 36, 46) 100%);
     color: white;
 }
-.hoveractivehome{
-    color: white;
-    opacity: 1;
-    border-left: solid 2px #ADFF2F;
-}
+
 .flex_grow{
     flex-grow: 1;
 }
@@ -154,6 +150,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
+    z-index: 3;
 }
 .box_playing{
     width: 30%;
@@ -316,7 +313,7 @@ section{
 }
 .navv{
     position: fixed;
-    width: calc(100% - 200px);
+    width: calc(100vw - 200px);
     opacity: 0.7;
     z-index: 2;
 }
@@ -433,7 +430,11 @@ section{
     left: 15px;
     bottom: 0;
 }
-
+.hoveractivehome{
+    color: white;
+    opacity: 1;
+    border-left: solid 2px #ADFF2F;
+}
 
 
 
@@ -472,4 +473,71 @@ section{
 }
 ::-webkit-scrollbar-corner {
   background: transparent;
+}
+
+@media all and (max-width: 750px){
+    section{
+        width: calc(100vw - 40px);
+        overflow: hidden;
+    }
+    .navv{
+        width: calc(100vw - 40px);
+    }
+        /* ASIDEBAR */
+.logobox{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 0;
+    padding: 5px;
+}
+.logo{
+    display:none
+}
+.logosmall{
+    display: block;
+}
+.logosmall{
+    width: 100%;
+    max-width: 30px;
+    height: 30px;
+}
+.hoveractivehome{
+    border-left: none;
+    align-self: flex-end;
+}
+aside{
+    min-width: 0;
+    width: 40px;
+}
+aside *{
+    text-align: center;
+}
+aside .box{
+    padding: 0;
+    height: calc(100vh - 86px);
+}
+aside .padding{
+    display:none;
+}
+.home_panel img{
+    height: 24px;
+    vertical-align: middle;
+    padding: 0;
+}
+aside span{
+    display: none;
+}
+.ul_playlist{
+    display:none;
+}
+.profilo_end{
+    padding: 0;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+aside hr{
+    border:none;
+    margin: 10px 0;
+}
 }
