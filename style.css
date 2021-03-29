@@ -362,13 +362,22 @@ section{
     width: 155px;
     height: 200px;
     flex-shrink: 0;
-    padding: 0 6.5px;
+    margin: 0 6.5px;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    max-width: 200px;
 }
 .boxbrano{
     position: relative;
+    width: inherit;
+}
+.boxbrano img{
+    width: 100%;
+}
+.section_brano .box2 .brano{
+    flex-grow: 1;
+}
 }
 .box3{
     flex-grow: 1;
@@ -537,6 +546,7 @@ aside span{
 .profilo_end{
     padding: 0;
     align-self: flex-end;
+    /* justify-self: flex-end; */
 }
 aside hr{
     border:none;
