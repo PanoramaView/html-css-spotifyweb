@@ -28,10 +28,10 @@
                 <img src="img/sinister.jpeg" class="img-responsive">
             </div>
             <div class="box_titolobrano text_ellipsis">
-                <div class="titolobrano">
+                <div class="titolobrano hoveropacity">
                     Sinister
                 </div>
-                <div class="artistabrano">
+                <div class="artistabrano hover">
                     Christopher Young
                 </div>
             </div>
@@ -53,10 +53,10 @@
                     <button class="my_btn boxbtn hoveropacity">
                         <i class="fa fa-step-backward" aria-hidden="true"></i>
                     </button>
-                    <button class="my_btn boxbtn mainbtn display-none hoveropacity">
+                    <button class="my_btn boxbtn mainbtn display-none hoveropacity hoverscale2 playpause">
                         <i class="fa fa-pause-circle-o" aria-hidden="true"></i>
                     </button>
-                    <button class="my_btn boxbtn mainbtn hoveropacity">
+                    <button class="my_btn boxbtn mainbtn hoveropacity hoverscale2 pauseplay">
                         <i class="fa fa-play-circle-o" aria-hidden="true"></i>
                     </button>
                     <button class="my_btn boxbtn hoveropacity">
@@ -71,8 +71,9 @@
                     <div class="time">0:25</div>
                     <div class="section_bgbar">
                         <div class="bgbar progress">
-                            <div class="playedbar progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                            <div class="playedbar progress-bar relative" role="progressbar" aria-valuenow="60" aria-valuemin="0"
                                 aria-valuemax="100">
+                                <button class="btn_progbar"></button>
                             </div>
                         </div>
                     </div>
@@ -92,8 +93,9 @@
             </button>
             <div class="section_bgbar">
                 <div class="bgbar progress">
-                    <div class="playedbar progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                    <div class="playedbar progress-bar relative" role="progressbar" aria-valuenow="60" aria-valuemin="0"
                         aria-valuemax="100">
+                        <button class="mybtn btn_progbar"></button>
                     </div>
                 </div>
             </div>
@@ -110,7 +112,7 @@
             </div>
             <div class="box">
                 <ul class="home_panel">
-                    <li class="hover hoveractive">
+                    <li class="hover hoveractivehome">
                         <img src="img/home.svg"><span>Home</span>
                     </li>
                     <li class="hover">
@@ -120,16 +122,18 @@
                         <img src="img/libreria.svg"><span>La Tua libreria</span>
                     </li>
                 </ul>
-                <ul class="ul_playlist">
+                <div class="padding">
                     <h6>playlist</h6>
-                    <li class="crea_playlist hover">
+                    <div class="crea_playlist hover">
                         <div class="playlist-icon relative">
                             <div class="plus">
                                 <i class="fa fa-plus" aria-hidden="true"></i>
                             </div>
                         </div>
                         <span>Crea Playlist</span>
-                    </li>
+                    </div>
+                </div>
+                <ul class="ul_playlist overflow_auto">
                     <li class="hover"><span>Nome Playlist</span></li>
                     <li class="hover"><span>Nome Playlist</span></li>
                     <li class="hover"><span>Nome Playlist</span></li>
@@ -139,7 +143,7 @@
                     <li class="hover"><span>Nome Playlist</span></li>
                 </ul>
                 <div class="profilo_end">
-                    <div class="installapp_box">
+                    <div class="installapp_box hover">
                         <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
                         Installa app
                     </div>
@@ -160,13 +164,15 @@
         <section>
             <div class="navv bg_darkgrey">
                 <div class="box">
-                    <button class="btn_upgrade my_btn hoveropacity">EFFETTUA L'UPGRADE</button>
+                    <button class="btn_upgrade my_btn hoverscale">EFFETTUA L'UPGRADE</button>
                 </div>
             </div>
             <div class="main-spotify bg_main">
                 <div class="navbarr">
                     <div class="box">
-                        <button class="my_btn hover selected">IN EVIDENZA</button>
+                        <button class="my_btn hover selected relative">IN EVIDENZA
+                            <div class="hoveractive_evidenza"></div>
+                        </button>
                         <button class="my_btn hover">PODCAST</button>
                         <button class="my_btn hover">CLASSIFICHE</button>
                         <button class="my_btn hover">GENERI E MOOD</button>

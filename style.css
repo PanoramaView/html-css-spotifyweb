@@ -23,9 +23,10 @@
     background: linear-gradient(0deg, rgba(17,22,29,1) 22%, rgb(30, 36, 46) 100%);
     color: white;
 }
-.hoveractive{
+.hoveractivehome{
     color: white;
     opacity: 1;
+    border-left: solid 2px #ADFF2F;
 }
 .flex_grow{
     flex-grow: 1;
@@ -65,23 +66,26 @@ aside{
     height: 40px;
 }
 aside .box{
-    padding: 0 24px;
+    padding: 0 12px;
     height: calc(100% - 86px);
     display: flex;
     flex-direction: column;
 }
-
+aside .padding{
+    padding: 0 12px;
+    padding-bottom: 10px;
+}
 .home_panel img{
     height: 24px;
     vertical-align: middle;
-    margin-right: 10px;
+    padding: 0 12px;
 }
 ul{
     list-style: none;
     padding: 0;
 }
 aside li{
-    margin: 10px 0;
+    padding: 5px 0;
     color: white;
     opacity: 0.5;
 }
@@ -97,8 +101,8 @@ h6{
 
 }
 .ul_playlist{
-    margin-top:24px;
     flex-grow: 1;
+    padding: 0 12px;
 }
 .playlist-icon{
     background-color: white;
@@ -113,6 +117,9 @@ h6{
     transform: translate(-50%,-50%);
     color: black;
     font-size: 20px;
+}
+.profilo_end{
+    padding: 0 12px;
 }
 .profile_box{
     display: flex;
@@ -172,6 +179,9 @@ nav{
 .artistabrano{
     color: #717171;
 }
+.artistabrano:hover{
+    text-decoration: underline;
+}
 .box_playing .boxbtn{
     align-self: center;
     margin: 0 5px;
@@ -230,23 +240,46 @@ nav{
     margin: 0 10px;
     background-color: transparent;
 }
-.time{
-}
 .bgbar{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     height: 4px;
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
     background-color: #535353;
     color: #b3b3b3;
     border-radius: 5px;
+}
+.playedbar:hover{
+    color: #ADFF2F;
+    cursor: pointer;
 }
 .playedbar{
     background-color: #b3b3b3;
     border-radius: 5px;
     width: 20%;
+}
+.section_bgbar:hover .playedbar{
+    background-color: #ADFF2F;
+    cursor: pointer;
+}
+.btn_progbar{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border: 0;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+    z-index: 100;
+}
+.section_bgbar:hover .btn_progbar{
+    display: block;
 }
 .time{
     font-size: 11px;
@@ -304,7 +337,7 @@ section{
     overflow: auto;
 }
 .navbarr .box{
-    padding: 15px 25px;
+    padding: 15px 25px 10px 25px;
     display: flex;
     justify-content: space-around;
     font-size: 10px;
@@ -312,7 +345,9 @@ section{
     margin: auto;
     flex-wrap: wrap;
 }
-
+.navbarr .box button{
+    padding-bottom: 3px;
+}
 .h_brano{
     color: white;
     padding: 20px 0;
@@ -352,7 +387,7 @@ section{
     color: #717171;
 }
 
-/* BRANO HOVER */
+/* HOVERS */
 .hover_overlay{
     position: absolute;
     top:0;
@@ -379,6 +414,32 @@ section{
     display: block;
 }
 
+.hoverscale:hover{
+    transform: scale(1.06);
+    opacity: 1;
+    filter: brightness(1.5);
+}
+.hoverscale2:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+.pauseplay:active{
+    display:none;
+}
+.hoveractive_evidenza{
+    border-bottom: solid 2px #ADFF2F;
+    position: absolute;
+    right: 15px;
+    left: 15px;
+    bottom: 0;
+}
+
+
+
+
+
+
+/* SCROLLBAR */
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
@@ -412,4 +473,3 @@ section{
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
-</style>

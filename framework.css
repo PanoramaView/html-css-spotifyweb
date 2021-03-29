@@ -42,7 +42,12 @@
     border: none;
     background: none;
 }
-
+.my_btn:focus{
+    outline: none;
+}
+.overflow_auto{
+    overflow: auto;
+}
 
  .clearfix{
     content: '';
