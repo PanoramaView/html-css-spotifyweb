@@ -156,7 +156,7 @@ nav{
     width: 30%;
     min-width: 180px;
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
 }
 .box_playing .box_img{
     position: relative;
@@ -506,6 +506,9 @@ section{
     border-left: none;
     align-self: flex-end;
 }
+.space{
+    display: block;
+}
 aside{
     min-width: 0;
     width: 40px;
@@ -515,7 +518,7 @@ aside *{
 }
 aside .box{
     padding: 0;
-    height: calc(100vh - 86px);
+    height: calc(100vh - 126px);
 }
 aside .padding{
     display:none;
@@ -534,7 +537,6 @@ aside span{
 .profilo_end{
     padding: 0;
     align-self: flex-end;
-    justify-self: flex-end;
 }
 aside hr{
     border:none;
